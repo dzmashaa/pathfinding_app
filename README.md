@@ -1,16 +1,35 @@
-# shortest_distance
+# Pathfinding Flutter App
 
-A new Flutter project.
+A Flutter application developed as a technical assessment. It fetches pathfinding tasks from a REST API, calculates the shortest path on a 2D grid avoiding obstacles, and submits the results.
+
+## Features
+
+* **Algorithm:** Implements Breadth-First Search (BFS) to find the shortest path in an unweighted grid.
+* **API Integration:** Uses the `http` package with robust error handling for network drops and invalid data.
+* **Responsive UI:** Adaptive layouts that safely handle screen rotation and keyboard appearance using `CustomScrollView` and `SafeArea`.
+* **Grid Visualization:** Custom scrollable grid view (horizontal & vertical) that dynamically calculates cell size to display large maps without UI overflow.
+
+## Tech Stack
+
+* **Framework:** Flutter
+* **Language:** Dart
+* **Packages:** `http`
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+```bash
+   git clone https://github.com/dzmashaa/pathfinding_app
+ ```
+2.Navigate to the project directory:
+```bash
+cd pathfinding_app
+```
+3.Install dependencies:
+```bash
+flutter pub get
+```
+3.Run the app:
+```bash
+flutter run
+```
